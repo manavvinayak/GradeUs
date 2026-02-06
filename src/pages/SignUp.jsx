@@ -137,7 +137,7 @@ const SignUp = ({ setIsAuthenticated }) => {
                 className={`form-control ${errors.email ? "error" : ""}`}
                 value={formData.email}
                 onChange={handleChange}
-                placeholder="Enter your email"
+                placeholder="user@gmail.com"
               />
               {errors.email && <div className="form-error">{errors.email}</div>}
             </div>
@@ -153,7 +153,7 @@ const SignUp = ({ setIsAuthenticated }) => {
                 className={`form-control ${errors.password ? "error" : ""}`}
                 value={formData.password}
                 onChange={handleChange}
-                placeholder="Create a password"
+                placeholder="Create a strong password"
               />
               {errors.password && <div className="form-error">{errors.password}</div>}
             </div>

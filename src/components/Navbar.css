@@ -20,6 +20,10 @@
   text-decoration: none;
 }
 
+.span-logo {
+  color: #1e20b7;
+}
+
 .navbar-toggle {
   display: none;
   background: none;

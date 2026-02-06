@@ -110,7 +110,7 @@
 /* CTA Section */
 .cta-section {
   padding: 5rem 0;
-  background: linear-gradient(135deg, #4361ee 0%, #3a0ca3 100%);
+  background:  #336699;
   color: var(--white);
 }
 
@@ -121,6 +121,7 @@
 }
 
 .cta-content h2 {
+    color: #cbd5e1;
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
 }

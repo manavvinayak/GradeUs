@@ -95,7 +95,7 @@ const Login = ({ setIsAuthenticated }) => {
       <div className="auth-container">
         <div className="auth-card">
           <h1>Welcome Back</h1>
-          <p className="auth-subtitle">Log in to access your GPA & Credit Tracker</p>
+          <p className="auth-subtitle">Log in to access  </p>
 
           <form className="auth-form" onSubmit={handleSubmit}>
             <div className="form-group">
@@ -125,7 +125,7 @@ const Login = ({ setIsAuthenticated }) => {
                 className={`form-control ${errors.password ? "error" : ""}`}
                 value={formData.password}
                 onChange={handleChange}
-                placeholder="Enter your password"
+                placeholder="Enter strong password"
               />
               {errors.password && <div className="form-error">{errors.password}</div>}
             </div>

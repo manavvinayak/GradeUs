@@ -22,7 +22,7 @@
 
 .gpa-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 15px black;
 }
 
 .gpa-card h3 {
@@ -39,7 +39,7 @@
 
 .gpa-info {
   font-size: 0.875rem;
-  color: var(--gray-color);
+  color: #080e1d;
 }
 
 .semester-selector {
@@ -50,7 +50,7 @@
   display: block;
   margin-bottom: 0.5rem;
   font-size: 0.875rem;
-  color: var(--gray-color);
+  color: #0f172a;
 }
 
 .semester-selector select {
@@ -90,6 +90,7 @@
 
 .conversion-formula {
   font-family: monospace;
+  font-size: medium;
   margin-bottom: 1rem;
   padding: 0.5rem;
   background-color: rgba(0, 0, 0, 0.05);

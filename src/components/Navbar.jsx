@@ -26,7 +26,7 @@ const Navbar = ({ isAuthenticated, setIsAuthenticated }) => {
     <header className="navbar">
       <div className="container navbar-container">
         <Link to="/" className="navbar-logo">
-          Gradus
+          Grade<span class="span-logo">Us </span>
         </Link>
 
         <button className="navbar-toggle" onClick={toggleMenu} aria-label="Toggle navigation">
@@ -41,8 +41,8 @@ const Navbar = ({ isAuthenticated, setIsAuthenticated }) => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/about" className="nav-link" onClick={() => setIsMenuOpen(false)}>
-                About Us
+              <Link to="/how-to-use" className="nav-link" onClick={() => setIsMenuOpen(false)}>
+                How to Use
               </Link>
             </li>
             {isAuthenticated ? (

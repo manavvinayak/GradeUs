@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-d
 import { Toaster } from "react-hot-toast"
 import Navbar from "./components/Navbar"
 import Landing from "./pages/Landing"
-import About from "./pages/About"
+import HowToUse from "./pages/HowToUse"
 import SignUp from "./pages/SignUp"
 import Login from "./pages/Login"
 import Dashboard from "./pages/Dashboard"
@@ -37,7 +37,7 @@ function App() {
         <main className="main-content">
           <Routes>
             <Route path="/" element={<Landing />} />
-            <Route path="/about" element={<About />} />
+            <Route path="/how-to-use" element={<HowToUse />} />
             <Route path="/signup" element={<SignUp setIsAuthenticated={setIsAuthenticated} />} />
             <Route path="/login" element={<Login setIsAuthenticated={setIsAuthenticated} />} />
             <Route

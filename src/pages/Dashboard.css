@@ -9,7 +9,7 @@
 
 .dashboard-header h1 {
   margin-bottom: 0.5rem;
-  color: var(--dark-color);
+  color: #075985;
 }
 
 .dashboard-header p {
@@ -20,7 +20,7 @@
   display: flex;
   justify-content: center;
   margin-bottom: 2rem;
-  border-bottom: 1px solid var(--light-gray);
+  border-bottom: 1px solid #a1a1aa;
 }
 
 .tab-button {
@@ -69,6 +69,168 @@
   margin-top: 2rem;
 }
 
+/* Export Button */
+.export-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.export-btn {
+  display: flex;
+  align-items: center;
+  min-width: 180px;
+  height: 52px;
+  border: none;
+  border-radius: 10px;
+  background-color: #5bba6f;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  transition: background-color 0.3s ease, transform 0.15s ease;
+}
+
+.export-btn:hover:not(:disabled) {
+  background-color: #4ea85e;
+  transform: translateY(-1px);
+}
+
+.export-btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.export-btn:disabled {
+  cursor: default;
+}
+
+.export-label {
+  flex: 1;
+  text-align: center;
+  padding: 0 0.5rem;
+}
+
+.export-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.12);
+  font-size: 0.85rem;
+}
+
+/* Dropdown */
+.export-dropdown {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border: 2px solid #5bba6f;
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 100;
+  animation: dropdownSlide 0.2s ease;
+}
+
+@keyframes dropdownSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.export-option {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1.25rem;
+  border: none;
+  background: transparent;
+  color: #2d6a3f;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.export-option:hover {
+  background-color: #e8f5e9;
+}
+
+.export-option:not(:last-child) {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Progress bar inside button */
+.export-btn.loading {
+  background-color: #e8f5e9;
+  padding: 0;
+}
+
+.export-progress-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.export-progress-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: #5bba6f;
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+.export-progress-text {
+  position: relative;
+  z-index: 1;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #2d6a3f;
+  letter-spacing: 1px;
+}
+
+/* Done state */
+.export-btn.done {
+  background-color: #5bba6f;
+}
+
+.export-done {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 1.6rem;
+  color: #fff;
+  animation: tickPop 0.3s ease;
+}
+
+@keyframes tickPop {
+  0% {
+    transform: scale(0);
+  }
+  60% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 @media (max-width: 992px) {
   .dashboard-grid {
     grid-template-columns: 1fr;
@@ -77,13 +239,36 @@
 
 @media (max-width: 768px) {
   .dashboard-tabs {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+    border-bottom: none;
+    background: #f1f5f9;
+    border-radius: 12px;
+    padding: 0.35rem;
   }
 
   .tab-button {
     flex: 1;
-    min-width: 120px;
-    padding: 0.75rem 1rem;
+    min-width: 0;
+    padding: 0.6rem 0.5rem;
     text-align: center;
+    font-size: 0.85rem;
+    border-bottom: none;
+    border-radius: 10px;
+    background: transparent;
+    color: #64748b;
+    transition: all 0.25s ease;
+  }
+
+  .tab-button.active {
+    background: var(--primary-color);
+    color: #fff;
+    border-bottom-color: transparent;
+    box-shadow: 0 2px 8px rgba(67, 97, 238, 0.3);
+  }
+
+  .tab-button:hover:not(.active) {
+    color: #4361ee;
+    background: rgba(67, 97, 238, 0.08);
   }
 }

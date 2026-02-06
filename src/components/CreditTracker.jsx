@@ -86,7 +86,7 @@ const CreditTracker = ({ courses, totalCreditsRequired, onUpdateTotalCredits }) 
             <>
               <div className="credit-value">{totalCreditsRequired}</div>
               <button className="edit-credits-btn" onClick={handleEditToggle} aria-label="Edit total credits required">
-                ✏️
+                <i className="bi bi-pencil-square"></i>
               </button>
             </>
           )}

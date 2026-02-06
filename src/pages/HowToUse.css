@@ -1,0 +1,155 @@
+.howtouse-page {
+  overflow-x: hidden;
+}
+
+.howtouse-hero {
+  background: #2563eb;
+  color: var(--white);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.howtouse-hero h1 {
+    color: #eef2ff;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.howtouse-subtitle {
+    color: #e2e8f0;
+  font-size: 1.25rem;
+  max-width: 700px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+/* Steps Section */
+.howtouse-steps {
+  padding: 4rem 0;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.step-card {
+  background-color: #f0fdfa;
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  box-shadow: var(--box-shadow);
+  text-align: center;
+  transition: var(--transition);
+  position: relative;
+}
+
+.step-card:hover {
+    background: #bae6fd;
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.step-number {
+  width: 50px;
+  height: 50px;
+  background: #38bdf8;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0 auto 1.25rem;
+}
+
+.step-card h3 {
+  margin-bottom: 0.75rem;
+  color: var(--dark-color);
+}
+
+.step-card p {
+  color: var(--gray-color);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Tips Section */
+.howtouse-tips {
+  padding: 5rem 0;
+  background-color: var(--light-color);
+}
+
+.howtouse-tips .section-title {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: var(--dark-color);
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.tip-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+}
+
+.tip-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.tip-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+  color: var(--primary-color);
+}
+
+.tip-content h4 {
+  margin-bottom: 0.4rem;
+  color: var(--dark-color);
+}
+
+.tip-content p {
+  color: var(--gray-color);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .howtouse-hero {
+    padding: 3rem 0;
+  }
+
+  .howtouse-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .howtouse-steps,
+  .howtouse-tips {
+    padding: 3rem 0;
+  }
+
+  .steps-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .tips-grid {
+    grid-template-columns: 1fr;
+  }
+}

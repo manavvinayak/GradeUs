@@ -104,7 +104,7 @@ const GpaCalculator = ({ courses }) => {
         <h3>GPA to Percentage Conversion</h3>
         <div className="conversion-cards">
           <div className="conversion-card">
-            <h4>Manav Rachna Formula</h4>
+            <h4>Normal Formula</h4>
             <div className="conversion-formula">Percentage = 10 × CGPA</div>
             <div className="conversion-result">{percentageManav.toFixed(2)}%</div>
           </div>

@@ -18,8 +18,8 @@ const Landing = () => {
                 <Link to="/dashboard" className="btn btn-primary">
                   Get Started
                 </Link>
-                <Link to="/about" className="btn btn-outline">
-                  Learn More
+                <Link to="/how-to-use" className="btn btn-outline">
+                  How to Use
                 </Link>
               </div>
             </div>
@@ -35,12 +35,12 @@ const Landing = () => {
           <h2 className="section-title">Key Features</h2>
           <div className="features-grid">
             <div className="feature-card">
-              <div className="feature-icon">📊</div>
+              <div className="feature-icon">🗿</div>
               <h3>GPA Calculator</h3>
               <p>Calculate your semester and cumulative GPA with our easy-to-use tool.</p>
             </div>
             <div className="feature-card">
-              <div className="feature-icon">📝</div>
+              <div className="feature-icon"><i className="bi bi-calendar2-check"></i></div>
               <h3>Course Management</h3>
               <p>Add, edit, and remove courses to keep track of your academic journey.</p>
             </div>
@@ -52,7 +52,7 @@ const Landing = () => {
             <div className="feature-card">
               <div className="feature-icon">💾</div>
               <h3>Data Persistence</h3>
-              <p>Your data is saved locally, so you can access it anytime, even offline.</p>
+              <p>Your data is saved locally,just export it as excell</p>
             </div>
           </div>
         </div>

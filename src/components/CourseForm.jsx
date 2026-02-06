@@ -104,7 +104,7 @@ const CourseForm = ({ onAddCourse, initialValues = null, onCancel = null }) => {
             className={`form-control ${errors.name ? "error" : ""}`}
             value={formData.name}
             onChange={handleChange}
-            placeholder="e.g. Introduction to Computer Science"
+            placeholder="e.g. Computer Networks"
           />
           {errors.name && <div className="form-error">{errors.name}</div>}
         </div>
